@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2创建cocopod的步骤a.创建一个spec Repo的私有远程">
+<meta name="description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2.创建cocopod的步骤a.创建一个spec Repo的私有远">
 <meta property="og:type" content="article">
 <meta property="og:title" content="私有库搭建之路">
 <meta property="og:url" content="http://yoursite.com/2017/11/23/私有库搭建之路/index.html">
 <meta property="og:site_name" content="子非鱼的博客">
-<meta property="og:description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2创建cocopod的步骤a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库b.创建spec Repoc">
+<meta property="og:description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2.创建cocopod的步骤a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库b.创建spec Repo">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/11/23/私有库搭建之路/pod/pod1.png">
-<meta property="og:updated_time" content="2017-11-24T09:03:22.000Z">
+<meta property="og:updated_time" content="2017-11-24T09:07:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="私有库搭建之路">
-<meta name="twitter:description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2创建cocopod的步骤a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库b.创建spec Repoc">
+<meta name="twitter:description" content="私有库的搭建 1.为什么要搭建私有库？ Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。2.创建cocopod的步骤a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库b.创建spec Repo">
 <meta name="twitter:image" content="http://yoursite.com/2017/11/23/私有库搭建之路/pod/pod1.png">
 
 
@@ -303,7 +303,7 @@
       
         <p></p><h1>私有库的搭建</h1><p></p>
 <p></p><h3>1.为什么要搭建私有库？</h3><p></p>
-<p>Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。<p1><br><h2>2创建cocopod的步骤</h2><br><p>a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库</p><br><p>b.创建spec Repo</p><br><p>c.创建pod的所需的项目工程文件，并上传到远程私有仓库</p><br><p>d.向私有的spec Repo远程仓库中提交podspec</p><br><p>e.使用自己创建的私有pod库</p><br><h3>2.1在gitlab上创建私有库仓库</h3><br><p>一个用来存放spec文件，一个用来存放工程源码<br></p>
+<p>Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。<p1><br><h2>2.创建cocopod的步骤</h2><br><p>a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库</p><br><p>b.创建spec Repo</p><br><p>c.创建pod的所需的项目工程文件，并上传到远程私有仓库</p><br><p>d.向私有的spec Repo远程仓库中提交podspec</p><br><p>e.使用自己创建的私有pod库</p><br><h3>2.1在gitlab上创建私有库仓库</h3><br><p>一个用来存放spec文件，一个用来存放工程源码<br></p>
 
 <p><img src="./pod/pod1.png" width="300/"></p>
 <p></p><h3>2.2创建spec Repo</h3></p1></p>
@@ -461,7 +461,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">私有库的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.为什么要搭建私有库？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">2创建cocopod的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.1.</span> <span class="nav-text">2.1在gitlab上创建私有库仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.2创建spec Repo</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">私有库的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.为什么要搭建私有库？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">2.创建cocopod的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.1.</span> <span class="nav-text">2.1在gitlab上创建私有库仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.2创建spec Repo</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
