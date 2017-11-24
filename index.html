@@ -229,6 +229,254 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/24/socket传值含义/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zifeiyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="子非鱼的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/24/socket传值含义/" itemprop="url">socket传值含义</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-24T16:29:17+08:00">
+                2017-11-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p></p><h1>socket常见几种消息</h1><p></p>
+<p></p><h3>1.isPersonOnline</h3><p></p>
+<p>isPersonOnline判断上次应用关闭时属于接单或者未打开接单的状态<br><pre>{“isPersonOnline”:false,”code”:200,”lastSyncDt”:”2017-11-21 14:11:28”,”action”:”CHECK_STATE”,”requests”:[]}</pre><br><pre>{“isPersonOnline”:true,”code”:200,”lastSyncDt”:”2017-11-21 14:26:10”,”action”:”CHECK_STATE”,”requests”:[]}</pre><br></p>
+
+<p></p><h3>2.RECEIVE_REQUEST</h3><p></p>
+<p>action:RECEIVE_REQUEST 点击接单按钮后将这个状态传给后台<br><pre>{“action”:”RECEIVE_REQUEST”,”imei”:”B1F39FDE-B548-4958-8D87-6952C80C10AC”,”point”:{“radius”:”65.000000”,”speed”:”0”,”appVersion”:”1.2.0”,”longituide”:114.06235890742887,”power”:”100”,”latituide”:22.539048611573666,”recordTime”:”2017-11-23 14:30:19”,”direction”:”0”,”seq”:”1511418619”},”phoneOs”:”11.000000”,”phoneType”:”iPhone 6”,”token”:”fbdc434f-258a-443b-a82e-58e69edfa604%2386”,”requestId”:”23430”,”networkType”:”wifi”}</pre></p><br><h3>3.CANCELED</h3><br><p>cammad 取消<pre>{“personId”:1524,”requestId”:23420,”cancelReason”:”客户自行取消：”,”command”:”CANCELED”,”reqType”:”VI”}</pre></p><br><h3>4.DISPATCH_ACK</h3><br><p>DISPATCH_ACK：APP收到接单信息<br><pre>{“point”:{“radius”:”65.000000”,”speed”:”0”,”appVersion”:”1.2.0”,”longituide”:114.06236042526861,”power”:”100”,”latituide”:22.539046782834429,”recordTime”:”2017-11-23 16:58:03”,”direction”:”0”,”seq”:”1511427483”},”requestId”:23534,”actionTime”:”2017-11-23 17:12:59”,”token”:”fbdc434f-258a-443b-a82e-58e69edfa604%2386”,”action”:”DISPATCH_ACK”}</pre></p><br><h3>5.IGNORE_REQUEST</h3><br><p>IGNORE_REQUEST派单平台取消订单<pre>{“point”:{“radius”:”65.000000”,”speed”:”0”,”appVersion”:”1.2.0”,”longituide”:114.06236042526861,”power”:”100”,”latituide”:22.539046782834429,”recordTime”:”2017-11-23 16:58:03”,”direction”:”0”,”seq”:”1511427483”},”requestId”:23534,”token”:”fbdc434f-258a-443b-a82e-58e69edfa604%2386”,”action”:”IGNORE_REQUEST”}</pre></p>
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/私有库搭建之路/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zifeiyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="子非鱼的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/23/私有库搭建之路/" itemprop="url">私有库搭建之路</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-23T11:31:54+08:00">
+                2017-11-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p></p><h1>私有库的搭建</h1><p></p>
+<h3>1.为什么要搭建私有库？</h3><br><p>Cocoapods是非常好用的一个iOS依赖管理工具，使用它可以方便的管理和更新项目中所使用到的第三方库，以及将自己的项目中的公共组件交由它去管理。搭建私有库可以使工程中的代码可复用性更强，降低工程项目中的耦合性。<p1><br><h2>2创建cocopod的步骤</h2><br><p>a.创建一个spec Repo的私有远程仓库 和 一个存放pod所需的项目工程文件的远程仓库</p><br><p>b.创建spec Repo</p><br><p>c.创建pod的所需的项目工程文件，并上传到远程私有仓库</p><br><p>d.向私有的spec Repo远程仓库中提交podspec</p><br><p>e.使用自己创建的私有pod库</p><br><h3>2.1在gitlab上创建</h3>
+</p1></p>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -390,7 +638,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
